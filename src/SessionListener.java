@@ -21,15 +21,15 @@ public class SessionListener implements HttpSessionListener {
 	/**
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
-    public void sessionCreated(HttpSessionEvent arg0)  { 
-         // TODO Auto-generated method stub
+    public void sessionCreated(HttpSessionEvent httpSessionEvent)  { 
+         // Restore any previous work saved to database
     }
 
 	/**
      * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
      */
-    public void sessionDestroyed(HttpSessionEvent arg0)  { 
-         // TODO Auto-generated method stub
+    public void sessionDestroyed(HttpSessionEvent httpSessionEvent)  { 
+    	// Save any session data to database
     }
 	
 }
